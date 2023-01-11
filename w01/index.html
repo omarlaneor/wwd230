@@ -6,6 +6,7 @@
     <meta name="description" content="Portal for assignments">
     <title>WDD 230:Assignment Portal</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
   <header class="principal">
@@ -31,14 +32,13 @@
         </ul>
     <hr>
     <p class="note">Some lessons may need more than one activity/assignment link.</p>
+    <hr>
+    <p class="note">Link to CodePen:</p> 
+    <a href="https://codepen.io/OmarLane/pen/oNMWxVy">CodePen</a>
   </main>
   <footer>
     <p>&copy;<span id="year"></span>.:|:. Omar Jr. Osorio .:|:. Quindío, Colombia</p>
-    <div>Last Updated: <script>
-        var f = new Date();
-        document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-        </script>
-    </div>
+    <div>Last Updated: <span id="currentdate"></span></div>
   </footer>
   <script src="scripts/script.js"></script>
  

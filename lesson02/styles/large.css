@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&family=Rubik&family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #295a13;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+}
+
+header > a {
+    font-size: 1.5em ;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;    
+}
+
+h1 {
+    margin-bottom: 0.25em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+    width: 100%;
+    margin: 18px auto;
+}
+
+section {
+    background-color: #e3f1d9;
+    border: solid 1px black;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #7bb36a;
+}
+
+section * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section > div {
+    padding: 0 10px;
+}
+
+section img {
+    width: calc(100% - 2px);
+    display: block;
+    margin: 0 auto;
+    border: solid 1px #3a3e52;
+    max-width: 300px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 18px;
+    background-color: #295a13; 
+}
+
+footer {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background-color: #295a13;
+    padding: 1em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+#date {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    padding-top: 4px;
+    display: block;
+}
+
+span, .year{
+    font-family: 'Raleway', sans-serif;
+}

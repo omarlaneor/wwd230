@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+header, footer {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+	background-color: #7cd5f8;
+	text-align: center;
+	padding: .60rem;
+	border: 1px solid rgba(81, 206, 148, 0.2);
+}
+
+header, main, footer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	color: #072033;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #69b6a9;
+	margin: 0 auto;
+	max-width: 780px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+
+}
+nav ul li a {
+    font-family: "Roboto" sans-serif;
+	display: block;
+	color: white;
+   	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	background: linear-gradient(90deg, transparent, #9ed8a9, transparent) bottom /
+		var(--d, 0) 4px no-repeat;
+	transition: 0.6s;
+}
+
+nav a:hover {
+    --d: 75%;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 2.8%;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+	font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.colors {
+    font-family: "Roboto" sans-serif;
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #468ba0;
+    color: white;
+}
+
+.colors td{
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #7cd5f8;
+    text-align: center;
+}
+.secondary {
+    background-color: #69b6a9;
+    text-align: center;
+}
+.accent1 {
+    background-color: #9ed8a9;
+    text-align: center;
+}
+.accent2 {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    background-color: #69b6a9;
+    padding: 1em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto" sans-serif;
+    font-size: 1em;
+}
+
+#date {
+    color: white;
+    font-family: "Roboto" sans-serif;
+    font-size: 0.8em;
+    padding-top: 4px;
+    display: block;
+}
+
+span, .year{
+    font-family: "Roboto" sans-serif;
+}

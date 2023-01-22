@@ -1,0 +1,33 @@
+@media only screen and (min-width: 37.5em) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+	h1 {
+		font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+	}
+
+ 	nav ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	} 
+
+	nav a {
+		font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+	}
+
+	nav a:hover {
+		--d: 75%;
+	}
+
+    footer p {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	
+}
+
+.colors {
+    width: 100%;
+}

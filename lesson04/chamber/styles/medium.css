@@ -1,0 +1,52 @@
+@media only screen and (min-width: 40em) {
+   .pages {
+      display: flex;
+   }
+   .pages li {
+      display: block; /* change state in small view */
+      flex: 1 1 auto;
+   }
+   .pages a {
+      text-align: center;
+   }
+   .pages li:first-child {
+      display: none;
+   }
+    
+   #footInfo1 {
+       flex-direction: row;
+        justify-content: space-between;
+   }
+ 
+   #footInfo1 div:nth-child(1) {
+    padding: 0px 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+ 
+   #footInfo1 div:nth-child(2) {
+    padding: 0px 2rem;
+   }
+  
+   #chamberInfo {
+       flex-direction: row;
+   }
+ 
+   #footInfo {
+       flex-direction: row;
+   }
+ 
+   #footInfo p {
+       padding: 0px 0px;
+   }
+ 
+   #footInfo p::after {
+       content: " | "
+   }
+ 
+   #footInfo p:last-child:after {
+       content: ""
+   }
+ }
+

@@ -11,7 +11,4 @@ function myFunction() {
     }
   }
 
-  const mainnav = document.querySelector('.pages')
-  const hambutton = document.querySelector('#menu');
-
-  hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+  

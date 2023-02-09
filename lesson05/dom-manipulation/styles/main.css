@@ -21,7 +21,7 @@ main {
 	padding: 0.5rem;
 	background-color: rgb(85, 119, 158);
 	display: grid;
-	grid-template-columns: 1;
+	grid-template-columns: 1fr;
 }
 
 input, button, h1 {

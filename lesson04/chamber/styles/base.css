@@ -7,6 +7,16 @@ nav {
 	background-color: #9ed8a9;
 }
 
+.date {
+    background-color:#9ed8a9;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
 body {
     margin: 0 auto;
     max-width: 1000px;
@@ -15,18 +25,18 @@ body {
 }
 
 section {
-    margin: 0.1em;
+    margin: 0 auto;
     background-color: #7cd5f8;
 }
 
-p, a, span, h1,h2,h3,h4,h5,h6 {
+p, a, span, h1,h2,h3,h4 {
     font-family: Roboto, sans-serif;
 }
 
 nav {
     margin: 0 auto;
     background-color: #69b6a9;
-    padding: 10px 10px;
+    padding: 8px 8px;
 }
 
 nav ul.open {
@@ -35,7 +45,7 @@ nav ul.open {
 
 nav ul {
     list-style-type: none;
-    padding: 10px;
+    padding: 8px;
     margin: 0px;
     display: none;
 }
@@ -43,21 +53,21 @@ nav ul {
 nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 1.2rem;
+    padding: 0.5rem;
     color: #ffffff;
     
 }
 
 nav ul li:hover {
     background-color: #9ed8a9;
-    border-radius: 0.6em;
+    border-radius: 0.3em;
 }
 
 .hero {
     justify-content: center;
     background-color: beige;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 220px;
     margin: 0 auto;
     margin-top: 0.5rem;
     grid-column: 1/2;
@@ -69,53 +79,224 @@ nav ul li:hover {
     height: 100%;
 }
 
+.hero-button{
+    position: absolute;
+    bottom: 60%;
+    right: 20%;
+    background-color: #9ed8a9;
+    border-radius: 8px;
+    border: 1px solid #69b6a9;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    outline: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transform: translateY(0);
+    transition: transform 146ms, box-shadow 146ms;
+    padding: 8px 20px;
+    
+}
+
+.hero-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 7px 0;
+    transform: translateY(-4px);
+}
+
 .event {
     display: block;
     background-color: #7cd5f8;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 200px;
     margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: 0 0 0.2em #9ed8a9;
+    margin-top: 12%;
+}
+
+.event-text {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -8%;
+    margin-top: 10%;
+}
+
+.event-text-1 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -4%;
+    margin-top: 0%;
+    padding: 0px;
 }
 
 .weather {
     display: block;
     width: 400px;
-    height: 100px;
+    height: 230px;
     margin: 0 auto;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
+#weather-temp {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-weather{
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: -40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    height: 1px;
+    width: 70%;
+    background-color: #9ed8a9;
+}
+
+.weather-title {
+    margin-top: 8%;
+    text-shadow: 0 0 0.2em #9ed8a9, 0 0 0.2em #69b6a9;
+}
+
+.weather-text {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    margin: -0.1em;
+}
+
 .news {
     display: block;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 200px;
     margin: 0 auto;
     grid-column: 1/2;
     grid-row: 4/5;
 }
 
-.spotlight1 {
+.new-text {
+    color: #FFFFFF;
+    margin: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.news-title {
+    margin-top: 4%;
+    text-shadow: 0 0 0.2em #9ed8a9, 0 0 0.2em #69b6a9;
+}
+
+.transport {
     display: block;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 220px;
     margin: 0 auto;
     grid-column: 1/2;
     grid-row: 5/6;
 }
 
-.spotlight2 {
+.transport-title {
+    margin-top: 4%;
+    text-shadow: 0 0 0.2em #9ed8a9, 0 0 0.2em #69b6a9;
+}
+
+.paragraph-text {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph-text-01 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.paragraph-text-02 {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    margin: -0.5em auto;
+    padding-top: 1px;
+    align-content: space-between;
+}
+
+.transport img {
+    width: 40px;
+    height: 38px;
+    transition: all 1s;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.tran-icon:hover {
+    transform: scale(1.2);
+}
+
+.primera {
     display: block;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 240px;
     margin: 0 auto;
     grid-column: 1/2;
     grid-row: 6/7;
 }
 
-.spotlight3 {
+.primera-title {
+    margin-top: 4%;
+    text-shadow: 0 0 0.2em #9ed8a9, 0 0 0.2em #69b6a9;
+}
+
+.code-icon:hover {
+    transform: scale(1.2);
+}
+
+.primera img {
+    width: 40px;
+    height: 38px;
+    transition: all 1s;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    margin: 0 auto;
+}
+
+.treefort {
     display: none;
 }
 
@@ -177,13 +358,13 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 2px;
 }
 
 main p {
     text-align: left;
     color: gray;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 footer {

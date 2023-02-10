@@ -10,7 +10,7 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Armenia's Chamber of Commerce</title>
 </head>
 <body>
@@ -29,7 +29,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <p id="date1"></p> --> 
             <ul class="pages">
                 <li><a id="menu" href="#"></a></li>
                 <li><a href="chamber/lesson04/index.html">🏡Home</a></li>
@@ -39,17 +38,60 @@
             </ul>
         </nav>
     </header>
+    <div class="date">
+        <span class="paragraph-text" id="get_date"></span>
+    </div>
     <main>
-        <section class="hero">
-            <img class="heroImage" src="/wwd230/lesson04/chamber/images/panoramica.png" alt="Armenia's View">
-            <p>Hero with site name and call to action</p></section>
-        <section class="event"><p>Event</p></section>
-        <section class="weather"><p>Weather</p></section>
-        <section class="news"><p>News Release</p></section>
-        <section class="join"><p>Join</p></section>
-        <section class="spotlight1"><p>Spotlight 1</p></section>
-        <section class="spotlight2"><p>Spotlight 2</p></section>
-        <section class="spotlight3"><p>Spotlight 3</p></section>
+
+        <section class="hero"><img class="heroImage" src="/wwd230/lesson04/chamber/images/panoramica.png" alt="Armenia's View">
+            <button class="hero-button">Join the Chamber</button>
+        </section>
+
+        <section class="event"><p class="event-text"></p>
+            <h2>Ribbon Cutting</h2>
+            <p class="event-text-1">The Diamond Shack</p>
+            <p class="event-text">Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.<a href="">   More info...</a></p>
+        </section>
+
+        <section class="weather"><p class= "weather-text"></p>
+            <h2 class="weather-title">Weather</h2>
+            <div class="up-weather"><p><span id="weather-temp"></span> °C</p></div>
+            <p><span id="weather-desc"></span></p>
+            <hr>
+            <p class="weather-text">Wind Speed: <span id="wind-speed"></span> km/h</p>
+            <p class="weather-text">Wind Chill: <span id="wind-chill"></span></p>
+        </section>
+
+        <section class="news">
+            <div class="new-text"><h2 class="news-title">News Release</h2>
+                <p class="paragraph-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            </div>
+        </section>
+
+        <section class="join"><button class="join-button">Join</button><p class="join-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequatur repellat.</p>
+        </section>
+
+        <section class="transport">
+            <h2 class="transport-title">Thankful Transport</h2><img class="tran-icon" src="images/Transport.png" alt="Transport Image"><br>
+            <p class="paragraph-text-01">"We get it for you"</p><hr>
+            <p class="paragraph-text-02">hello@thankfultransport</p><br>
+            <p class="paragraph-text-02">+999-9999-9999 website</p>
+        </section>
+
+        <section class="primera">
+            <h2 class="primera-title">Code Primera</h2><img class="code-icon" src="images/scolarship.png" alt="School Image"><br>
+            <p class="paragraph-text-01">An after school coding<br>instructional program</p><hr>
+            <p class="paragraph-text-02">contact@codeprimera.com</p><br>
+            <p class="paragraph-text-02">+999-9999-9999 | website</p>
+        </section>
+
+        <section class="treefort">
+            <h2 class="tree-title">Build a Treefort</h2><img class="tree-icon" src="images/housetree.png" alt="Treefort Image"><br>
+            <p class="paragraph-text-01">Over 1000 Plans!</p><hr>
+            <p class="paragraph-text-02">builda@treefort.com</p><br>
+            <p class="paragraph-text-02">+999-9999-9999 website</p>
+        </section>
+
     </main>
     <footer>
         <div id="footInfo1">
@@ -72,7 +114,8 @@
             <p>&copy; <span id="year"></span> Armenia's Chamber | Omar Junior Osorio | WDD 230 Project | Last Modification: <span id="date2"></span>
         </div>
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js" async defer></script>
+    <script src="scripts/wind.js" async defer></script>
     
 </body>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
 @media only screen and (min-width: 80em) {
     
     main {
@@ -10,10 +12,27 @@
         padding: 0;
     }
 
+    h2 {
+        margin-top: 20%;
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+        text-shadow: 0 0 0.2em #9ed8a9, 0 0 0.2em #69b6a9;
+    }
+
     main p {
         text-align: left;
         color: white;
         margin: 1rem;
+    }
+
+    .date {
+		background-color:#9ed8a9;
+		color: white;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 10px 0px 10px 0px;
     }
 
     .hero {
@@ -35,6 +54,34 @@
         display: flex;
     }
 
+    .hero-button{
+        position: absolute;
+        bottom: 40%;
+        right: 38%;
+		background-color: #9ed8a9;
+		border-radius: 8px;
+        border: 1px solid #69b6a9;
+		box-sizing: border-box;
+		box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+		color: #FFFFFF;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		outline: 0;
+        user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		transform: translateY(0);
+		transition: transform 146ms, box-shadow 146ms;
+		padding: 8px 20px;
+        
+	}
+	
+	.hero-button:hover {
+		box-shadow: rgba(0, 0, 0, 0.15) 0 2px 7px 0;
+		transform: translateY(-4px);
+	}
+
     .event {
         background-color: #7cd5f8;
         width: 250px;
@@ -44,12 +91,48 @@
         grid-row: 1/2;
     }
 
+    .event-text {
+        font-size: 14px;
+        text-align: center;
+		align-items: stretch;
+		justify-content: center;
+    }
+
     .weather {
         width: 250px;
         height: 200px;
         margin: 0 auto;
         grid-column: 1/2;
         grid-row: 2/3;
+        text-align: center;
+		align-items: stretch;
+		justify-content: center;
+    }
+
+    hr {
+        height: 1px;
+        width: 70%;
+        background-color: #9ed8a9;
+        text-align: center;
+		align-items: stretch;
+		justify-content: center;
+    }
+
+    .up-weather{
+		display: inline-block;
+        margin-bottom: -40px;
+    }
+
+    .weather-title {
+        margin-top: 6%;
+    }
+
+    .weather-text {
+        font-size: 16px;
+        text-align: center;
+		align-items: center;
+		align-content: space-between;
+        margin: -0.1rem;
     }
 
     .join {
@@ -58,6 +141,44 @@
         margin: 0 auto;
         grid-column: 1/2;
         grid-row: 3/4;
+        text-align: center;
+		align-items: center;
+		justify-content: center;
+    }
+
+    .join-text {
+        text-align: center;
+    }
+
+    .join-button {
+        display: inline-block;
+        margin: 30px;
+        color: #FFFFFF;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: rgba(19, 16, 16, 0.1) 0 2px 4px 0;
+        background-color: #9ed8a9;
+        border: 1px solid #69b6a9;
+        border-radius: 16px;
+        outline: 0;
+        outline: none;
+        transform: translateY(0);
+        transition: transform 160ms, box-shadow 160ms;
+        cursor: pointer;
+        user-select: none;
+        touch-action: manipulation;
+        padding: 15px 60px;
+        -webkit-user-select: none;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+		align-items: center;
+		justify-content: center;
+    }
+
+    .join-button:hover {
+        box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+        transform: translateY(-2.5px);
     }
 
     .news {
@@ -66,7 +187,19 @@
         grid-row: 3/4;
     }
 
-    .spotlight1 {
+    .new-text {
+        margin: 10px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		align-content: space-between;
+    }
+
+	.news-title {
+        margin-top: 4%;
+    }
+
+    .transport {
         width: 250px;
         height: 200px;
         margin: 0 auto;
@@ -74,7 +207,42 @@
         grid-row: 1/2;
     }
 
-    .spotlight2 {
+    .transport-title {
+        margin-top: 4%;
+    }
+
+    .paragraph-text-01 {
+        font-size: 14px;
+        font-style: italic;
+        text-align: center;
+		align-items: center;
+		justify-content: center;
+        align-content: space-between;
+    }
+
+    .paragraph-text-02 {
+        color: #FFFFFF;
+        font-size: 12px;
+        text-align: center;
+		align-items: center;
+		align-content: space-between;
+        margin: -0.7em auto;
+        padding-top: 1px;
+        align-content: space-between;
+    }
+
+    .transport img {
+		width: 40px;
+        height: 38px;
+        transition: all 1s;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+	}
+
+	.tran-icon:hover {
+		transform: scale(1.2);
+	}
+
+    .primera {
         width: 250px;
         height: 200px;
         margin: 0 auto;
@@ -82,7 +250,22 @@
         grid-row: 2/3;
     }
 
-    .spotlight3 {
+    .primera img {
+		width: 40px;
+        height: 38px;
+        transition: all 1s;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+	}
+
+    .primera-title {
+        margin-top: 4%;
+    }
+
+    .code-icon:hover {
+		transform: scale(1.2);
+	}
+
+    .treefort {
         display: block;
         width: 250px;
         height: 200px;
@@ -90,6 +273,21 @@
         grid-column: 3/4;
         grid-row: 3/4;
     }
+
+    .treefort img {
+		width: 40px;
+        height: 38px;
+        transition: all 1s;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+	}
+
+    .tree-title {
+        margin-top: 4%;
+    }
+
+    .tree-icon:hover {
+		transform: scale(1.2);
+	}
 
     nav ul {
         display: flex;
@@ -145,5 +343,5 @@
 	}
 	.pages li:first-child {
 		display: none;
-	}
+    }
 }

@@ -2,6 +2,10 @@
 
 @media only screen and (min-width: 80em) {
     
+    #hamburger {
+        display: none;
+    }
+    
     main {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;

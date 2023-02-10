@@ -7,6 +7,59 @@ nav {
 	background-color: #9ed8a9;
 }
 
+.banner {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: #9ed8a9;
+}
+
+.banner-content {
+    color: #FFFFFF;
+    max-width: 650px;
+    padding: 1.4px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.banner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.banner-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-button img {
+    width: 40px;
+}
+
+.banner-button > span:hover {
+    color: #FFFFFF;
+}
+
+#hamburger {
+    color: #FFFFFF;
+    text-decoration: none;
+    grid-column: 2;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 2.4em;
+}
+
+.responsive  li{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
 .date {
     background-color:#9ed8a9;
     color: white;

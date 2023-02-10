@@ -1,6 +1,13 @@
 document.getElementById("year").innerHTML = new Date().getFullYear()
 document.getElementById("date2").innerHTML = " "+document.lastModified
 
+let hamburger = document.querySelector('#hamburger');
+let nav = document.querySelector('header');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('responsive');
+
+});
 
 function myFunction() {
     var x = document.getElementById("myPages");

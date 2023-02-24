@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="Salt Lake City Chamber of Commerce site for WDD230">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/css/base.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/large.css">
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/visits.js"></script>
+    <script defer src="../scripts/weather.js"></script>
+    <title> Salt Lake City Chamber of Commerce</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+            <button type="button" class="banner-button"><img src="../images/banner.png" alt="Close Button"></button>
+        </div>
+    </div>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="../images/SLC_Chamber.png" alt="Salt Lake City Chamber of Commerce Logo"></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+            <ul>
+                <li><a href="/WDD230/chamber/discover.html">Discover</a></li>
+                <li><a href="/WDD230/chamber/directory.html">Directory</a></li>
+                <li><a href="/WDD230/chamber/join.html">Join</a></li>
+                <li><a href="/WDD230/chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="#"><img src="../images/facebook.webp" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="#"><img src="../images/instagram.webp" alt="Instagram Logo and Link to our Instagram"></a>
+            <a href="#"><img src="../images/linkedin.webp" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+            <a href="#"><img src="../images/youtube.webp" alt="Youtube Logo and Link to our Youtube"></a>
+        </section>
+        
+    </header>
+
+    <section class="date"></section>
+
+    <main class="home">
+        <h1>Salt Lake City Chamber of Commerce</h1>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 50px)" srcset="../images/downtown-salt-lake-city.jpg">
+                <source media="(min-width: 200px)" srcset="../images/downtown-salt-lake-city.jpg">
+                <source media="(min-width: 300px)" srcset="../images/downtown-salt-lake-city.jpg">
+                <source media="(min-width: 200px)" srcset="../images/downtown-salt-lake-city.jpg">
+                <!-- <img src="../images/downtown-salt-lake-city.jpg" alt="Salt Lake City Chamber of Commerce Hero Image">
+            </picture>
+            <!-- <button type="button">Discover Us</button> -->
+        </section>
+        <section id="event">
+            <h2>Salt Lake City Events </h2>
+            <hr>
+            <p>June 20, 2023: Chamber BBQ at the National Park</p>
+            <p>July 4, 2023: Chamber Firework Show</p>
+            <p>August 8, 2023: Chamber Board Meeting & Elections</p>
+        </section>
+
+
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather_top">
+                <h2><span id="temp"></span>&#8457;</h2>
+                <figure><img src="#" alt="Placeholder" id="weathericon" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <hr>
+            <p>Wind: <span id="wind"></span> MPH</p>
+            <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+        </section>
+
+
+
+
+
+        
+        <section id="news">
+            <h2>Salt Lake City News</h2>
+        </section> -->
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spot1">
+                <a href="#"><h3>Public Market</h3></a>
+                <img src="../images/public market.jpg" alt="Public Market">
+            </div>
+            <div id="spot2">
+                <a href="#"><h3>my dear <br> mother earth,</h3></a>
+                <img src="../images/place.jpg" alt="Plant Shop Cafe">
+            </div>
+            <div id="spot3">
+                <a href="#"><h3> Hall Pass </h3></a>
+                <img src="../images/grocery shopping.jpg" alt="Grocery Shopping">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="about">
+            <img src="../images/SLC_Chamber.png" alt="Salt Lake City Chamber of Commerce Logo">
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>10 Pike Street</p>
+                <p>Salt Lake City, 12101</p>
+                <a href="#">Directions</a> 
+            </div>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p>info@salt lake city.com</p>
+                <p>(123) 456-7890 </p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Salt Lake City Chamber of Commerce | Eniola Ogundele| WDD230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

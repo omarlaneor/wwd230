@@ -14,17 +14,11 @@
     <title>Armenia's Chamber of Commerce</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
-            <button type="button" class="banner-button"><img src="images/green-close-buttom.png" alt="Close Button"></button>
-        </div>
-    </div>
     <header>
         <nav>
             <div id="topnav">
                 <div id="menunav">
-                    <img src="/wwd230/lesson04/chamber/images/chamber_of_commerce_logo.svg" alt="ACC logo">
+                    <img src="/wwd230/lesson03/images/chamber_of_commerce_logo.webp" alt="ACC logo">
                     <h3>Armenia's Chamber of Commerce</h3>
                 </div>
                 <div id="social">
@@ -39,70 +33,82 @@
             <ul class="pages">
                 <li><a id="menu" href="#"></a></li>
                 <li><a href="chamber/lesson04/index.html">🏡Home</a></li>
-                <li><a href="chamber/lesson04/knowyourchamber.html">☕Know your Chamber</a></li>
-                <li><a href="chamber/lesson04/aboutus.html">⚙About Us</a></li>
-                <li><a href="chamber/lesson04/faq.html">📱FAQ</a></li>
+                <li><a href="chamber/lesson04/discover.html">☕Discover</a></li>
+                <li><a href="chamber/lesson04/join.html">⚙Join Us</a></li>
+                <li><a href="chamber/lesson04/directory.html">📱Directory</a></li>
+                <li><a href="chamber/lesson04/contact.html">📧Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="date">
         <span class="paragraph-text" id="get_date"></span>
     </div>
-    <main>
-
-        <section class="hero"><img class="heroImage" src="/wwd230/lesson04/chamber/images/panoramica.png" alt="Armenia's View">
+    <main class="home">
+        <h1>Armenia's Chamber of Commerce</h1>
+        <div class="hero">
+            <picture class="myHero">
+                <source media="(min-width:200px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
+                <source media="(min-width:600px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
+                <source media="(min-width:1200px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
+                <img class="heroImage" src="/wwd230/lesson06/images/wdd230_org.jpg" alt="Armenia's View">
+            </picture>
             <button class="hero-button">Join the Chamber</button>
+        </div>
+
+        <section class="event">
+            <h2>Events</h2>
+            <p class="event-text">February 27, 2023 - 8:30 am
+                Workshop: Study of the Future in Agroindustrial Chains</p><br>
+            <p class="event-text">March 02, 2023 - 9:00 am 
+                Business Roundtable - Bakeries and Pastry Shops</p><br>
+            <p class="event-text">March 10, 2023 - 3:00 pm
+                Training in Water Quality Protocols and Training Plans for personnel.
         </section>
 
-        <section class="event"><p class="event-text"></p>
-            <h2>Ribbon Cutting</h2>
-            <p class="event-text-1">The Diamond Shack</p>
-            <p class="event-text">Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.<a href="">   More info...</a></p>
-        </section>
-
-        <section class="weather"><p class= "weather-text"></p>
+        <section class="weather">
             <h2 class="weather-title">Weather</h2>
             <div class="up-weather"><p><span id="weather-temp"></span> °C</p></div>
-            <p><span id="weather-desc"></span></p>
+            <div><span id="weather-desc"></span></div>
             <hr>
             <p class="weather-text">Wind Speed: <span id="wind-speed"></span> km/h</p>
             <p class="weather-text">Wind Chill: <span id="wind-chill"></span></p>
         </section>
 
         <section class="news">
-            <div class="new-text"><h2 class="news-title">News Release</h2>
-                <p class="paragraph-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            <div class="new-text"><h2 class="news-title">News</h2>
+                <hr>
+                <h4>Sales on digital platforms</h4>
+                <p>February 7, 2023: In the recent sales report for the 2022-2023 season, made by the Studies and...     <a href="https://camaraarmenia.org.co/noticias-empresarial/ventas-en-plataformas-digitales/">View More...</a></p>
+                <hr>
+                <h4>Quindío, the destination chosen for the end of the year season</h4>
+                <p>January 17, 2023: 99.8% of tourists would visit Quindío again and recommend it as a vacation destination...      <a href="https://camaraarmenia.org.co/noticias-empresarial/quindio-el-destino-elegido-en-la-temporada-de-fin-de-ano-segun-el-observatorio-de-turismo-de-la-camara-de-comercio-el-998-de-los-turistas-volverian-a-visitar-el-quindio-y-recomendarian-el-destino-c/">View More...</a></p>
             </div>
         </section>
 
-        <section class="join"><button class="join-button">Join</button><p class="join-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequatur repellat.</p>
+        <section class="join">
+            <h2 class="join-title">Join Us</h2>
+            <p class="join-text">To be part of the Circle of Affiliates of the Armenian Chamber of Commerce is to belong to the select group of preferential clients. Where you can access and enjoy exclusive services and benefits; reaching new business opportunities and solid business strengthening.</p>
+            <button class="join-button">Join</button>
         </section>
 
-        <section class="transport">
-            <h2 class="transport-title">Thankful Transport</h2><img class="tran-icon" src="images/Transport.png" alt="Transport Image"><br>
-            <p class="paragraph-text-01">"We get it for you"</p><hr>
-            <p class="paragraph-text-02">hello@thankfultransport</p><br>
-            <p class="paragraph-text-02">+999-9999-9999 website</p>
+        <section class="spots">
+            <div id="educational">
+                <a href="#"><h2>Educational Training</h2></a>
+                <img class="tran-icon" src="/wwd230/lesson06/images/Study_chamber.jpg" alt="Study Image">
+            </div>
+            <div id="virtual">
+                <a href="#"><h2>Virtual Services</h2></a>
+                <img src="/wwd230/lesson06/images/Virtual.jpg" alt="Virtual Services Image">
+            </div>
+            <div id="business">
+                <a href="#"><h2>Business Services</h2></a>
+                <img src="/wwd230/lesson06/images/Business.jpg" alt="Business Center Img">
+            </div>
         </section>
-
-        <section class="primera">
-            <h2 class="primera-title">Code Primera</h2><img class="code-icon" src="images/scolarship.png" alt="School Image"><br>
-            <p class="paragraph-text-01">An after school coding<br>instructional program</p><hr>
-            <p class="paragraph-text-02">contact@codeprimera.com</p><br>
-            <p class="paragraph-text-02">+999-9999-9999 | website</p>
-        </section>
-
-        <section class="treefort">
-            <h2 class="tree-title">Build a Treefort</h2><img class="tree-icon" src="images/housetree.png" alt="Treefort Image"><br>
-            <p class="paragraph-text-01">Over 1000 Plans!</p><hr>
-            <p class="paragraph-text-02">builda@treefort.com</p><br>
-            <p class="paragraph-text-02">+999-9999-9999 website</p>
-        </section>
-
     </main>
-    <footer>
+    <footer class="footerBox">
         <div id="footInfo1">
-            <div id="chamberInfo">
+            <div id="locationInfo">
                 <img src="/wwd230/lesson04/chamber/images/chamber_of_commerce_logo.svg" alt="ACC Logo" id="logo2">
                 <div>
                     <h3>Armenia's Chamber of Commerce</h3>
@@ -110,20 +116,18 @@
                     <p>Armenia, Quindío. Colombia</p>
                 </div>
             </div>
-            <div>
+            <div id="chamberInfo">
                 <p>camara@camaraarmenia.org.co</p>
                 <p>PBX +57 6067412300</p>
                 <p>📍 Location Map</p>
             </div>
         </div>
 
-        <div id="footInfo">
-            <p>&copy; <span id="year"></span> Armenia's Chamber | Omar Junior Osorio | WDD 230 Project | Last Modification: <span id="date2"></span>
+        <div id="footInfo2">
+            <p>&copy;<span id="year"></span> Armenia's Chamber | Omar Junior Osorio | WDD 230 Project | Last Modification: <span id="date2"></span>
         </div>
     </footer>
     <script src="scripts/scripts.js" async defer></script>
     <script src="scripts/wind.js" async defer></script>
-    
 </body>
-
 </html>

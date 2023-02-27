@@ -435,12 +435,6 @@
         background-color: #e7f7ec;
     }
 
-    #discover img:hover {
-        -moz-box-shadow: 0 0 20px #1a1515;
-        -webkit-box-shadow: 0 0 20px #1a1515;
-        box-shadow: 0 0 20px #1a1515;
-    } 
-
     #discover div {
         display: inline-block;
         justify-content: center;

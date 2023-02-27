@@ -185,7 +185,7 @@
 
     .hero-button{
         position: absolute;
-        bottom: 22%;
+        bottom: 38%;
         right: 30%;
 		background-color: #9ed8a9;
 		border-radius: 8px;
@@ -350,13 +350,15 @@
         margin-left: 20px;
         margin-right: 10px;
 		text-align: left;
-		
+    }
+
+    .news p {
+        color: #FFFFFF;
     }
 
 	.news-title {
         margin-top: 2.4%;
-        text-align: center;
-        
+        text-align: center; 
     }
 
     .spots {
@@ -378,8 +380,8 @@
         height: 80%;
         overflow: hidden;
         position: relative;
-        margin-top: 2px;
-        bottom: 104px;
+        bottom: 28px;
+        margin: 2px 2px 2px 0;
     }
 
     #virtual img {
@@ -388,7 +390,7 @@
         overflow: hidden;
         position: relative;
         margin-top: 2.6px;
-        bottom: 180px;
+        bottom: 94px;
     }
 
     #business img {
@@ -396,7 +398,7 @@
         height: 80%;
         overflow: hidden;
         position: relative;
-        bottom: 250px;
+        bottom: 160px;
     }
 
     #educational h2 {
@@ -451,6 +453,16 @@
         justify-content: center;
         font-style: italic;
     }
+
+    #footInfo1 p {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+    }
+
+    #footInfo2 p {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+    }
     
     footer {
         margin-top: 0.6rem;
@@ -500,7 +512,111 @@
     }
 
     #footInfo1 {
+        color: #FFFFFF;
         flex-direction: row;
         justify-content: space-between;
     }
+
+
+
+/* Here starts the Discover Page Code:*/
+
+    #demographic {
+        color: #FFFFFF;
+        font-size: 22px;
+        text-align: center;
+        background-color: #69b6a9;
+        margin: 1% 20% 6% 20%;
+        padding: 2%;
+        border-radius: 10%;
+        box-shadow: 0 0 0.2em #1c201d;
+    }
+
+    #demographic p {
+        color: #FFFFFF;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #demographic h1 {
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 4%;
+        font-size: 40px;
+        font-family: Roboto, sans-serif;
+        text-shadow: 0 0 0.2em #1c201d, 0 0 0.2em #142925;
+    }
+
+    #discover main {
+        font-family: Roboto, sans-serif;
+        background-color: #e7f7ec;
+    }
+
+    #discover img:hover {
+        -moz-box-shadow: 0 0 20px #1a1515;
+        -webkit-box-shadow: 0 0 20px #1a1515;
+        box-shadow: 0 0 20px #1a1515;
+    } 
+
+    #discover div {
+        display: block;
+        justify-content: center;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    picture {
+        justify-content: center;
+    }
+
+    div h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    div p {
+        margin-left: 14%;
+        font-size: 20px;
+        color: #1a1515;
+    }
+
+    #discover {
+        font-family: Roboto, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 6px;
+        justify-content: center;
+    }
+
+    #discover img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+        width: calc(100vw - 10px);
+        max-width: 1024px;
+        border: 3px solid rgba(10, 233, 196, 0.3);
+        border-radius: 5px;
+        margin-left: 27%;
+    }
+
+    main #discover {
+        display: flex;
+    }
+
+    .visitedDays {
+        width: 70%;
+        background-color: #69b6a9;
+        border-radius: 20%;
+        box-shadow: 0 0 0.2em #1c201d;
+        color: #FFFFFF;
+        font-style: italic;
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        margin-left: 13%;
+        padding: 0.5%;
+    }
+
 }

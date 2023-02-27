@@ -223,6 +223,11 @@
         grid-row: 4/5;
     }
 
+    .news p {
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+
     .new-text {
         color: #FFFFFF;
         margin: 16px;
@@ -335,7 +340,15 @@
         display: flex;
     }
 
+    #footInfo1 p {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+    }
 
+    #footInfo2 p {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+    }
 
     footer {
         display: flex;

@@ -1,0 +1,37 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(10, 13, 58);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.cards section {
+    width: 300px;
+    text-align: center;
+    background-color: rgb(130, 218, 206);
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid rgba(0, 255, 213, 0.3);
+}
+
+img {
+    width: 100%;
+    box-shadow: 6px 8px 8px 6px #092c17;
+}
+
+h2, h1 {
+    color: #FFFFFF;
+    text-align: center;
+}

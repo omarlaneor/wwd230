@@ -34,7 +34,7 @@
                 <li><a id="menu" href="#"></a></li>
                 <li><a href="/wwd230/lesson04/chamber/index.html">🏡Home</a></li>
                 <li><a href="/wwd230/lesson04/chamber/discover.html">☕Discover</a></li>
-                <li><a href="#">⚙Join Us</a></li>
+                <li><a href="/wwd230/lesson04/chamber/join.html">⚙Join Us</a></li>
                 <li><a href="#">📱Directory</a></li>
                 <li><a href="#">📧Contact</a></li>
             </ul>
@@ -43,40 +43,54 @@
     <div class="date">
         <span class="paragraph-text" id="get_date"></span>
     </div>
-	<form method="get" action="thankyou.html">
-        <fieldset>
-            <label for="name">Name*:</label>
-            <input type="text" name="name" id="name" required><br>
+	
+    <main class="main-join">
+        <div class="join-content"> 
+         <form action="thankyou.html" autocomplete="off" method="GET">
+            <h3 class="join-title">Armenia's Chamber Form</h3>
+            
+                <fieldset>
+                    <legend><strong>Basic information</strong></legend>
+                    <label>First Name*<br />
+                    <input name="ftname" type="text" placeholder="Jack"  required /></label><br>
+                    <label>Last Name*<br />
+                    <input name="lname" type="text" placeholder="Dawson"  required/></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Contact Reference</strong></legend>
+                    <label>Email*<br />
+                        <input name="email" type="email" placeholder="example@info.com"  required/>
+                    </label><br>
+                    <label>Contact Number*<br />
+                    <input name="contact" type="tel" placeholder="123456789" required/></label><br>
+                </fieldset>
+                <fieldset class="business">
+                    <legend>Business Info</legend>
+                    <label>Business Position<br>
+                        <input name="businessPosition" type="text" placeholder="Your business position"></label><br>
+                    <label >Business name:<br />
+                        <input name="businessname" type="text" pattern="[a-zA-Z][a-zA-Z0-9\s]*"  placeholder="Enter a name"/></label><br>
+                    <label>Business Description</label>
+                    <textarea name="businessdescription"  placeholder="Enter a brief description of your business"></textarea><br>
+                </fieldset>
+                <fieldset class="membership">
+                    <legend>Membership</legend>
+                    <label class="la-lvl"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> A small step in the right direction, with this membership you will be able to get to know the Chamber community so that you can grow hand in hand with us in your professional life.</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $100.000 COP </span></label><p class="description"> This membership is ideal for that professional who wants to be up-to-date with all topics, attend seminars without the need to apply being a member of the Chamber´s community.</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $180.000 COP</span></label><p class="description"> The good thing about this membership is that you have more credits available to keep your certifications up to date and of course, you can enjoy all the benefits offered by being part of the Armenia's Chamber of Commerce community for a year.</p>
+                    <label class="la-lvl"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $250.000 COP</span></label><p class="description"> Being GOLD is having it all! Attendance to free face-to-face seminars, access to free online seminars, unlimited use of the VIP Suite and all the benefits of being a member of Armenia's Chamber of Commerce.</p>
+                </fieldset>
+                <fieldset>
+                    <label><input class="checkbox" name="checkbox" type="checkbox" value="yes" required /> I confirm that the information above is true.</label><br /> 
+                </fieldset>
+                <label><input type="hidden" id="date" name="date" value=""></label>
+                <button type="submit" value="Submit" class="submit-Btn">Submit Form</button>
+             </form>
+        </div>
+ 
+    </main>
 
-            <label for="lastName">Last Name*:</label>
-            <input type="text" name="lastName" id="lastName" required><br>
 
-            <label for="title">Title:</label>
-            <input type="text" name="title" id="title" pattern="[a-zA-Z\s-]{7,}" title="The Business position title must contain at least 7 alphabetic characters, hyphens and spaces." ><br>
-
-            <label for="mail">E-mail*:</label>
-            <input type="email" name="mail" id="mail" placeholder="example@domain.com" required><br>
-
-            <label for="phone">Cellphone number:</label>
-            <input type="cel" name="phone" id="phone" required><br>
-
-            <label for="businessName">Business Name*:</label>
-            <input type="text" name="businessName" id="businessName" required><br>
-
-            <label for="membership"></label>Membership level:</label>
-            <select name="membership" id="membership">
-                <option value="np">NP Membership (Free)</option>
-                <option value="bronze">Bronze Membership ($50)</option>
-                <option value="silver">Silver Membership ($100)</option>
-                <option value="gold">Gold Membership ($150)</option>
-            </select><br>
-
-            <label for="description">Business Description*:</label>
-            <textarea name="description" id="description" rows="5"></textarea><br>
-            <input type="hidden" name="date" value="" id="date">
-            <input type="submit" value="send">
-        </fieldset>
-	</form>
     <footer class="footerBox">
         <div id="footInfo1">
             <div id="locationInfo">

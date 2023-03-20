@@ -583,5 +583,75 @@
         padding: 0.5%;
     }
 
+
+/* Here starts the Join Us Page Code:*/
+
+    .join-content fieldset {
+        border: 1px solid #4d6451;
+        border-radius: 20px;   
+    }
+
+    .main-join {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 2px;
+        height: 80rem;
+    }
+
+    .main-join {
+        font-size: 20px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .join-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .submit-Btn{
+        display: flex;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .cost{
+        background-color: #69b6a9;
+    }
+
+    .join-title{
+        color: #4d6451;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .description{
+        font-size: 15px;
+        text-align: justify;
+        margin: 1.5rem;
+    }
+
+    legend, label {
+        color: #4d6451;
+        text-align: center;
+    }
+
+    .membership {
+        padding: 2rem;
+    }
+
+    .join-content .businesses {
+        padding: 10rem;
+    }
+
 }
 

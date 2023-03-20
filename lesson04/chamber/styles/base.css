@@ -375,23 +375,21 @@
         margin: 0.1rem;
     }
 
-    /* Here starts the Discover Page Code:*/
+/* Here starts the Discover Page Code:*/
 
-    #demographic {
-        color: #FFFFFF;
-        font-size: 22px;
-        text-align: center;
-        background-color: #69b6a9;
-        margin: 1% 10% 6% 10%;
-        padding: 2%;
-        border-radius: 10%;
-        box-shadow: 0 0 0.2em #1c201d;
+    #discover main {
+        display: grid;
+        grid-column: 1fr;
+        font-family: Roboto, sans-serif;
+        background-color: #e7f7ec;
     }
 
     #demographic p {
-        color: #FFFFFF;
+        color: #4d6451;
         font-size: 22px;
+        margin: 2% 10% 2% 10%;
         text-align: center;
+        grid-template-columns: 1/2;
     }
 
     #demographic h1 {
@@ -403,22 +401,14 @@
         text-shadow: 0 0 0.2em #1c201d, 0 0 0.2em #142925;
     }
 
-    #discover main {
-        font-family: Roboto, sans-serif;
-        background-color: #e7f7ec;
-    }
+    #discover img:hover {
+        -moz-box-shadow: 0 0 20px #1a1515;
+        -webkit-box-shadow: 0 0 20px #1a1515;
+        box-shadow: 0 0 20px #1a1515;
+    } 
 
     #discover div {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main {
-        justify-content: center;
-    }
-
-    picture {
+        grid-column: 1;
         justify-content: center;
     }
 
@@ -429,9 +419,9 @@
     }
 
     div p {
-        margin: 1%;
+        text-align: center;
         font-size: 20px;
-        color: #1a1515;
+        color: #4d6451;
     }
 
     #discover {
@@ -444,28 +434,28 @@
     }
 
     #discover img {
+        display: block;
+        margin: auto auto;
+    }
+
+    #discover picture {
         filter: blur(0em);
         transition: filter 0.5s;
         width: calc(100vw - 10px);
         max-width: 1024px;
-        border: 3px solid rgba(10, 233, 196, 0.3);
-        border-radius: 5px;
+        align-content: center;
     }
 
     main #discover {
         display: flex;
+        justify-content: center;
     }
 
     .visitedDays {
-        width: 70%;
-        background-color: #69b6a9;
-        border-radius: 20%;
-        box-shadow: 0 0 0.2em #1c201d;
-        color: #FFFFFF;
+        color: #69b6a9;
         font-style: italic;
         font-family: Roboto, sans-serif;
         text-align: center;
-        margin-left: 13%;
         padding: 0.5%;
     }
 

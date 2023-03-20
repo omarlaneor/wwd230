@@ -183,33 +183,6 @@
         height: 608px;
     }
 
-    .hero-button{
-        position: absolute;
-        bottom: 38%;
-        right: 30%;
-		background-color: #9ed8a9;
-		border-radius: 8px;
-        border: 1px solid #69b6a9;
-		box-sizing: border-box;
-		box-shadow: rgba(0, 0, 1, 0.1) 0 4px 4px 0;
-		color: #FFFFFF;
-		text-align: center;
-		cursor: pointer;
-		outline: none;
-		outline: 0;
-        user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-		transform: translateY(0);
-		transition: transform 146ms, box-shadow 146ms;
-		padding: 10px 36px;
-	}
-	
-	.hero-button:hover {
-		box-shadow: rgba(0, 0, 0, 0.15) 0 2px 7px 0;
-		transform: translateY(-4px);
-	}
-
     .event {
         background-color: #7cd5f8;
         width: 100%;
@@ -521,21 +494,19 @@
 
 /* Here starts the Discover Page Code:*/
 
-    #demographic {
-        color: #FFFFFF;
-        font-size: 22px;
-        text-align: center;
-        background-color: #69b6a9;
-        margin: 1% 20% 6% 20%;
-        padding: 2%;
-        border-radius: 10%;
-        box-shadow: 0 0 0.2em #1c201d;
+    #discover main {
+        display: grid;
+        grid-column: 1fr;
+        font-family: Roboto, sans-serif;
+        background-color: #e7f7ec;
     }
 
     #demographic p {
-        color: #FFFFFF;
+        color: #4d6451;
         font-size: 22px;
+        margin: 2% 10% 2% 10%;
         text-align: center;
+        grid-template-columns: 1/2;
     }
 
     #demographic h1 {
@@ -547,11 +518,6 @@
         text-shadow: 0 0 0.2em #1c201d, 0 0 0.2em #142925;
     }
 
-    #discover main {
-        font-family: Roboto, sans-serif;
-        background-color: #e7f7ec;
-    }
-
     #discover img:hover {
         -moz-box-shadow: 0 0 20px #1a1515;
         -webkit-box-shadow: 0 0 20px #1a1515;
@@ -559,17 +525,10 @@
     } 
 
     #discover div {
-        display: block;
+        grid-column: 1;
         justify-content: center;
     }
 
-    main {
-        justify-content: center;
-    }
-
-    picture {
-        justify-content: center;
-    }
 
     div h2 {
         text-align: center;
@@ -578,9 +537,9 @@
     }
 
     div p {
-        margin-left: 14%;
+        text-align: center;
         font-size: 20px;
-        color: #1a1515;
+        color: #4d6451;
     }
 
     #discover {
@@ -593,29 +552,28 @@
     }
 
     #discover img {
+        display: block;
+        margin: auto auto;
+    }
+
+    #discover picture {
         filter: blur(0em);
         transition: filter 0.5s;
         width: calc(100vw - 10px);
         max-width: 1024px;
-        border: 3px solid rgba(10, 233, 196, 0.3);
-        border-radius: 5px;
-        margin-left: 27%;
+        align-content: center;
     }
 
     main #discover {
         display: flex;
+        justify-content: center;
     }
 
     .visitedDays {
-        width: 70%;
-        background-color: #69b6a9;
-        border-radius: 20%;
-        box-shadow: 0 0 0.2em #1c201d;
-        color: #FFFFFF;
+        color: #69b6a9;
         font-style: italic;
         font-family: Roboto, sans-serif;
         text-align: center;
-        margin-left: 13%;
         padding: 0.5%;
     }
 

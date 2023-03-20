@@ -43,68 +43,40 @@
     <div class="date">
         <span class="paragraph-text" id="get_date"></span>
     </div>
-    <main class="home">
-        <h1>Armenia's Chamber of Commerce</h1>
-        <div class="hero">
-            <picture class="myHero">
-                <source media="(min-width:200px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
-                <source media="(min-width:600px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
-                <source media="(min-width:1200px)" srcset="/wwd230/lesson06/images/wdd230_org.jpg">
-                <img class="heroImage" src="/wwd230/lesson06/images/wdd230_org.jpg" alt="Armenia's View">
-            </picture>
-        </div>
+	<form method="get" action="thankyou.html">
+        <fieldset>
+            <label for="name">Name*:</label>
+            <input type="text" name="name" id="name" required><br>
 
-        <section class="event">
-            <h2>Events</h2>
-            <p class="event-text">February 27, 2023 - 8:30 am
-                Workshop: Study of the Future in Agroindustrial Chains</p><br>
-            <p class="event-text">March 02, 2023 - 9:00 am 
-                Business Roundtable - Bakeries and Pastry Shops</p><br>
-            <p class="event-text">March 10, 2023 - 3:00 pm
-                Training in Water Quality Protocols and Training Plans for personnel.
-        </section>
+            <label for="lastName">Last Name*:</label>
+            <input type="text" name="lastName" id="lastName" required><br>
 
-        <section class="weather">
-            <h2 class="weather-title">Weather</h2>
-            <div class="up-weather"><p><span id="weather-temp"></span> °C</p></div>
-            <div><span id="weather-desc"></span></div>
-            <hr>
-            <p class="weather-text">Wind Speed: <span id="wind-speed"></span> km/h</p>
-            <p class="weather-text">Wind Chill: <span id="wind-chill"></span></p>
-        </section>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" pattern="[a-zA-Z\s-]{7,}" title="The Business position title must contain at least 7 alphabetic characters, hyphens and spaces." ><br>
 
-        <section class="news">
-            <div class="new-text"><h2 class="news-title">News</h2>
-                <hr>
-                <h4>Sales on digital platforms</h4>
-                <p>February 7, 2023: In the recent sales report for the 2022-2023 season, made by the Studies and...     <a href="https://camaraarmenia.org.co/noticias-empresarial/ventas-en-plataformas-digitales/">View More...</a></p>
-                <hr>
-                <h4>Quindío, the destination chosen for the end of the year season</h4>
-                <p>January 17, 2023: 99.8% of tourists would visit Quindío again and recommend it as a vacation destination...      <a href="https://camaraarmenia.org.co/noticias-empresarial/quindio-el-destino-elegido-en-la-temporada-de-fin-de-ano-segun-el-observatorio-de-turismo-de-la-camara-de-comercio-el-998-de-los-turistas-volverian-a-visitar-el-quindio-y-recomendarian-el-destino-c/">View More...</a></p>
-            </div>
-        </section>
+            <label for="mail">E-mail*:</label>
+            <input type="email" name="mail" id="mail" placeholder="example@domain.com" required><br>
 
-        <section class="join">
-            <h2 class="join-title">Join Us</h2>
-            <p class="join-text">To be part of the Circle of Affiliates of the Armenian Chamber of Commerce is to belong to the select group of preferential clients. Where you can access and enjoy exclusive services and benefits; reaching new business opportunities and solid business strengthening.</p>
-            <button class="join-button">Join</button>
-        </section>
+            <label for="phone">Cellphone number:</label>
+            <input type="cel" name="phone" id="phone" required><br>
 
-        <section class="spots">
-            <div id="educational">
-                <a href="#"><h2>Educational Training</h2></a>
-                <img class="tran-icon" src="/wwd230/lesson06/images/Study_chamber.jpg" alt="Study Image">
-            </div>
-            <div id="virtual">
-                <a href="#"><h2>Virtual Services</h2></a>
-                <img src="/wwd230/lesson06/images/Virtual.jpg" alt="Virtual Services Image">
-            </div>
-            <div id="business">
-                <a href="#"><h2>Business Services</h2></a>
-                <img src="/wwd230/lesson06/images/Business.jpg" alt="Business Center Img">
-            </div>
-        </section>
-    </main>
+            <label for="businessName">Business Name*:</label>
+            <input type="text" name="businessName" id="businessName" required><br>
+
+            <label for="membership"></label>Membership level:</label>
+            <select name="membership" id="membership">
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership ($50)</option>
+                <option value="silver">Silver Membership ($100)</option>
+                <option value="gold">Gold Membership ($150)</option>
+            </select><br>
+
+            <label for="description">Business Description*:</label>
+            <textarea name="description" id="description" rows="5"></textarea><br>
+            <input type="hidden" name="date" value="" id="date">
+            <input type="submit" value="send">
+        </fieldset>
+	</form>
     <footer class="footerBox">
         <div id="footInfo1">
             <div id="locationInfo">
@@ -128,5 +100,6 @@
     </footer>
     <script src="scripts/scripts.js" async defer></script>
     <script src="scripts/wind.js" async defer></script>
+	<script src="/wwd230/lesson04/chamber/scripts/form.js"></script>
 </body>
 </html>

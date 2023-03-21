@@ -614,12 +614,18 @@
         margin: 0 auto;
     }
 
-    .submit-Btn{
+    .submit-Btn {
         display: flex;
         margin: 1rem auto;
         padding: 1rem;
         border-radius: 8px;
         cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+      
+    .submit-Btn:hover {
+        background-color: #69b6a9;
+        color: #FFFFFF;
     }
 
     .cost{
@@ -651,6 +657,14 @@
 
     .join-content .businesses {
         padding: 10rem;
+    }
+
+/* Here starts the thankyou Code:*/
+
+    .body-ty {
+        color: #4d6451;
+        text-align: center;
+        font-family: Roboto, sans-serif;
     }
 
 }

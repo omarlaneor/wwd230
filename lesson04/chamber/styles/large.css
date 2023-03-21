@@ -613,8 +613,14 @@
         padding: 1rem;
         border-radius: 8px;
         cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
-
+      
+    .submit-Btn:hover {
+        background-color: #69b6a9;
+        color: #FFFFFF;
+    }
+      
     .cost {
         background-color: #69b6a9;
     }
@@ -647,4 +653,11 @@
         padding: 10rem;
     }
 
+/* Here starts the thankyou Code:*/
+
+    .body-ty {
+        color: #4d6451;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+    }
 }

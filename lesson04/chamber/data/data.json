@@ -1,160 +1,74 @@
 {
-    "companies": [
-        {
-            "name": "Likelihood",
-            "type": "Clothing & Accessories",
-            "location": {
-                "address1": "845 Main Street",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "https://www.likelihood.us",
-            "logo": "images/directory/likelihood.jpg"
+	"companies":[{
+			"name": "investInArmenia",
+			"address": "Cra 14 No 23-15/piso 4 Armenia",
+			"phone": "+53 (606) 7412300, Ext 133",
+			"url": "https://investinarmenia.org/",
+			"img": "https://investinarmenia.org/logo.png"
+	    },
+
+	    {
+			"name": "quindioConventionBureau",
+			"address": "Cra. 14 # 23-15 4th Floor",
+			"phone": "(57-6) 7412300 Ext: 111",
+			"url": "http://www.quindioconventionbureau.com/",
+			"img": "http://www.quindioconventionbureau.com/wp-content/uploads/2017/10/bureau.png"
+	    },
+
+	    {
+			"name": "parqueSoftQuindio",
+			"address": "Cra. 14 # 23-15 6th Floor",
+			"phone": "+57 320-8363037",
+			"url": "https://www.parquesoftquindio.com.co/",
+			"img": "https://lh4.googleusercontent.com/g7YHDAhLqV_yaLoYMlcj9hxG4-c_WcbVwgkuDkCUg8yiL3JuFiI9Eq-hWZTPj6ceEoWvytKDTZ3lBzvqVr7iiwY=w16383"
+	    },
+
+	    {
+			"name": "edeq",
+			"address": "Carrera 13 Nº 14-17 ",
+			"phone": "01 8000 910115",
+			"url": "https://www.edeq.com.co/",
+			"img": "https://www.edeq.com.co/Portals/0/logo-edeq2.png?ver=2020-05-28-082707-333"
         },
+
         {
-            "name": "Chihuly Garden and Glass", 
-            "type": "Entertainment",
-            "location": {
-                "address1": "123 Pike Place",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "https://www.chihulygardenandglass.com",
-            "logo": "images/directory/glass.webp"
+			"name": "anato",
+			"address": "Cra. 19B #. 83-63 - 8th Floor",
+			"phone": "(+57) 601 4322040",
+			"url": "https://anato.org/",
+			"img": "https://anato.org/wp-content/uploads/2020/08/anato_logo_blanco.png"
         },
+
         {
-            "name": "Patagucci Clothing Store",
-            "type": "Clothing & Accessories",
-            "location": {
-                "address1": "55 Second Street",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "http://www.patagucci.com",
-            "logo": "images/directory/patagucci.webp"
+			"name": "acodres",
+			"address": "Cra 7 BIS No 123-52",
+			"phone": "(+57) 601 532100",
+			"url": "https://www.acodres.com.co/",
+			"img": "https://www.acodres.com.co/wp-content/uploads/2020/08/Logo-Acodres.jpg"
         },
+        
         {
-            "name": "Mother Nature's Plants",
-            "type": "Shopping",
-            "location": {
-                "address1": "487 West Street",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "http://www.motherearth.com",
-            "logo": "images/directory/plants.webp"
+			"name": "cueAlexanderVonHumboldt",
+			"address": "Cra. 13 #16N-07",
+			"phone": "3108049819",
+			"url": "https://www.cue.edu.co/",
+			"img": "https://www.cue.edu.co/front/images/assets/logo.png"
         },
+        
         {
-            "name": "Pizzeria",
-            "type": "Food & Drink",
-            "location": {
-                "address1": "4 Market Street",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "http://www.pizzeria.com",
-            "logo": "images/directory/pizza.webp"
+			"name": "sena",
+			"address": "Calle 57 No. 8 - 69",
+			"phone": "+(57) 601 3430111",
+			"url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",
+			"img": "https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png"
         },
+        
         {
-            "name": "Metropolitan Market",
-            "type": "Entertainment",
-            "location": {
-                "address1": "77 Sea Street",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "10001"
-            },
-            "phone": "123-456-7890",
-            "website": "https://metropolitan-market.com/",
-            "logo": "images/directory/grocery.webp"
-        },
-        {
-            "name": "Ellenos",
-            "type": "Food & Drink",
-            "location": {
-                "address1": "1500 Pike Place",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98101"
-            },
-            "phone": "(206) 535-7562",
-            "website": "https://ellenos.com",
-            "logo": "images/directory/ellenos.webp"
-        },
-        {
-            "name": "Seattle Public Library",
-            "type": "Public Services",
-            "location": {
-                "address1": "1000 Fourth Avenue",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98104"
-            },
-            "phone": "(206) 386-4636",
-            "website": "https://www.spl.org/",
-            "logo": "images/directory/library.webp"
-        },
-        {
-            "name": "The Space Needle",
-            "type": "Entertainment",
-            "location": {
-                "address1": "Space Needle Way",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98101"
-            },
-            "phone": "(206) 905-2100",
-            "website": "https://www.spaceneedle.com/",
-            "logo": "images/directory/spaceneedle.webp"
-        },
-        {
-            "name": "Seattle Aquarium",
-            "type": "Entertainment",
-            "location": {
-                "address1": "1483 Alaskan Way",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98101"
-            },
-            "phone": "(206) 386-4300",
-            "website": "https://www.seattleaquarium.org",
-            "logo": "images/directory/aqua.webp"
-        },
-        {
-            "name": "Amazon Spheres",
-            "type": "Entertainment",
-            "location": {
-                "address1": "2101 7th Avenue",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98121"
-            },
-            "phone": "(123-456-7890)",
-            "website": "https://www.seattlespheres.com",
-            "logo": "images/directory/spheres.webp"
-        },
-        {
-            "name": "The Pink Door",
-            "type": "Food & Drink",
-            "location": {
-                "address1": "1919 Post Alley",
-                "city": "Seattle",
-                "state": "WA",
-                "zip_code": "98101"
-            },
-            "phone": "(206) 443-3241",
-            "website": "https://www.thepinkdoor.net",
-            "logo": "images/directory/pinkdoor.webp"
-        }
+			"name": "governmentOfColombia",
+			"address": "Murillo Toro Building - Cra. 8 Between St. 12A and St. 12B - Bogotá, Colombia.",
+			"phone": "01 8000 95 2525",
+			"url": "https://www.gov.co/",
+			"img": "https://cdn.www.gov.co/assets/images/logo.svg"
+	    }
     ]
 }

@@ -667,5 +667,19 @@
         font-family: Roboto, sans-serif;
     }
 
+/* Here starts the Directory code: */
+
+    .directory-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .directory-list section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        align-items: center;
+    }
+
+
 }
 

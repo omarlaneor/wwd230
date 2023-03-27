@@ -660,4 +660,11 @@
         text-align: center;
         font-family: Roboto, sans-serif;
     }
+
+/* Here starts the Directory code: */
+
+    .directory-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }

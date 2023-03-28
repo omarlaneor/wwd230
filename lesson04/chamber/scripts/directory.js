@@ -33,10 +33,10 @@ function displayCompany(company) {
     let url = document.createElement('a');
 
     name.textContent = company.name;
-    address.textContent = `📍 ${company.address}`;
-    phone.textContent = `📞 ${company.phone}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phone}`;
 
-    url.textContent = `🌐 ${company.name} site`;
+    url.textContent = `${company.name} site`;
     url.href = company.url
     
     logo.src = company.img;
@@ -45,7 +45,6 @@ function displayCompany(company) {
 
 
     card.appendChild(name);
-    card.appendChild(membership);
     card.appendChild(logo);
     card.appendChild(address);
     card.appendChild(phone);

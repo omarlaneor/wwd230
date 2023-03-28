@@ -1,63 +1,63 @@
 {
   "companies": [
     {
-      "name": "investInArmenia",
-      "address": "Cra 14 No 23-15/piso 4 Armenia",
+      "name": "Invest In Armenia",
+      "address": "Cra 14 No 23-15 / 4th Floor Armenia",
       "phone": "+53 (606) 7412300, Ext 133",
       "url": "https://investinarmenia.org/",
       "img": "https://investinarmenia.org/logo.png"
     },
     {
-      "name": "quindioConventionBureau",
+      "name": "Quindio Convention Bureau",
       "address": "Cra. 14 # 23-15 4th Floor",
       "phone": "(57-6) 7412300 Ext: 111",
       "url": "http://www.quindioconventionbureau.com/",
       "img": "http://www.quindioconventionbureau.com/wp-content/uploads/2017/10/bureau.png"
     },
     {
-      "name": "parqueSoftQuindio",
+      "name": "Parque Soft Quindio",
       "address": "Cra. 14 # 23-15 6th Floor",
       "phone": "+57 320-8363037",
       "url": "https://www.parquesoftquindio.com.co/",
       "img": "https://lh4.googleusercontent.com/g7YHDAhLqV_yaLoYMlcj9hxG4-c_WcbVwgkuDkCUg8yiL3JuFiI9Eq-hWZTPj6ceEoWvytKDTZ3lBzvqVr7iiwY=w16383"
     },
     {
-      "name": "edeq",
+      "name": "EDEQ",
       "address": "Carrera 13 Nº 14-17 ",
       "phone": "01 8000 910115",
       "url": "https://www.edeq.com.co/",
       "img": "https://www.edeq.com.co/Portals/0/logo-edeq2.png?ver=2020-05-28-082707-333"
     },
     {
-      "name": "anato",
+      "name": "Anato",
       "address": "Cra. 19B #. 83-63 - 8th Floor",
       "phone": "(+57) 601 4322040",
       "url": "https://anato.org/",
-      "img": "https://anato.org/wp-content/uploads/2020/08/anato_logo_blanco.png"
+      "img": "https://anato.org/wp-content/uploads/2019/11/frase-elegida-en-negro.png"
     },
     {
-      "name": "acodres",
+      "name": "Acodres",
       "address": "Cra 7 BIS No 123-52",
       "phone": "(+57) 601 532100",
       "url": "https://www.acodres.com.co/",
       "img": "https://www.acodres.com.co/wp-content/uploads/2020/08/Logo-Acodres.jpg"
     },
     {
-      "name": "cueAlexanderVonHumboldt",
+      "name": "Alexander Von Humboldt",
       "address": "Cra. 13 #16N-07",
       "phone": 3108049819,
       "url": "https://www.cue.edu.co/",
       "img": "https://www.cue.edu.co/front/images/assets/logo.png"
     },
     {
-      "name": "sena",
+      "name": "SENA",
       "address": "Calle 57 No. 8 - 69",
       "phone": "+(57) 601 3430111",
       "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",
       "img": "https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png"
     },
     {
-      "name": "governmentOfColombia",
+      "name": "Government Of Colombia",
       "address": "Murillo Toro Building - Cra. 8 Between St. 12A and St. 12B - Bogotá, Colombia.",
       "phone": "01 8000 95 2525",
       "url": "https://www.gov.co/",

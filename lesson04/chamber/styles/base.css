@@ -379,7 +379,7 @@
 
     #discover main {
         display: grid;
-        grid-column: 1fr;
+        grid-column: 1;
         font-family: Roboto, sans-serif;
         background-color: #e7f7ec;
     }
@@ -389,7 +389,7 @@
         font-size: 20px;
         margin: 2% 10% 2% 10%;
         text-align: center;
-        grid-template-columns: 1/2;
+        grid-template-columns: 1;
     }
 
     #demographic h1 {
@@ -544,68 +544,84 @@
 
 /* Here starts the Directory Code: */
 
-    .directory-grid {
+    .cards {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 8px;
+        grid-gap: 20px;
+        justify-content: center;
+        margin-left: 8%;
+        max-width: 760px;
     }
-    
-    .directory-grid section {
-        text-align: center;
-        margin: 8px;
-        border: 3px solid rgba(20, 19, 19, 0.3);
+     
+    .card {
+        font-family: Roboto, sans-serif;
+        background-color: #FFFFFF;
         border-radius: 10px;
-        padding: 0.5rem;
-        background-color: white;
+        box-shadow: 0 2px 4px #1a1515;
+        overflow: hidden;
+        width: 500px;
+        align-items: center;
     }
-    
-    .directory-grid section h3 {
-        margin: 0.5rem 0;
-        background-color: var(--primary-dark-color);
-        font-size: 1.2rem;
-        background-color: white;
+      
+    .card img {
+        padding: 4%;
+        width: 50%;
+        text-align: center;
     }
-    
-    .directory-grid section img {
-        height: 100px;
+      
+    .card h4 {
+        margin: 0;
+        color: #1a1515;
+        text-align: center;
+        font-size: 26px;
     }
-    
-    .directory-grid section p {
-        margin: 0.5rem 0;
-        
+      
+    .card p {
+        color: #55867c;
+        justify-content: center;
     }
-    
-    .directory-list {
+
+    .card a {
+        font-size: 16px;
+        font-style: italic;
+        padding-left: 40px;
+        color: blue;
+    }
+
+    #directory {
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .cards.list {
         display: flex;
         flex-direction: column;
-        
     }
-    
-    .directory-list img,
-    .directory-list p:nth-of-type(1) {
+
+    .cards.list .card {
+        background-color: #9ed8a9;
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .cards.list .card img {
         display: none;
-        
     }
     
-    .directory-list section {
-        text-align: start;
-        margin: 4px 0;
-        padding: 0.5rem;
-        color: black;
+    .cards.list .card p {
+        color: #1c201d;
+        text-align: center;
     }
-    
-    .directory-list section:nth-of-type(odd) {
-        background-color: #d8d4d5;
+
+    .cards.list .card a {
+        color: #4d6451;
+        align-items: center;
     }
-    
-    .directory-list section h3 {
-        margin: 0.5rem 0;
-        color: rgb(37, 33, 33);
-        font-size: 1.2rem;
-    }
-    
-    .directory-list section p {
-        margin: 0.5rem 0;
+      
+    div {
+        align-items: center;
     }
 
 }

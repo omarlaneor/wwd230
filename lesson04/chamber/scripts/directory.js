@@ -1,72 +1,45 @@
-const companies = document.querySelector('#companies');
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
+// Obtener los elementos HTML necesarios
+const directory = document.getElementById("directory");
+const cards = document.querySelector(".cards");
+const gridBtn = document.getElementById("grid");
+const listBtn = document.getElementById("list");
 
-function showGrid() {
-    companies.classList.add("directory-grid");
-    companies.classList.remove("directory-list");
-}
-
-function showList() {
-    companies.classList.add("directory-list");
-	companies.classList.remove("directory-grid");
-}
-
-gridButton.addEventListener("click", showGrid);
-listButton.addEventListener("click", showList);
-
-
-const requestURL = "https://raw.githubusercontent.com/omarlaneor/wwd230/main/lesson04/chamber/data/data.json";
-
-fetch(requestURL)
-    .then((response) => response.json())
-    .then((jsonObject) => {
-        const companies = jsonObject['companies'];
-        companies.forEach(displayCompany);
-    });
-
-function displayCompany(company) {
-    let card = document.createElement('section');
-    let name = document.createElement('h3');
-    let address = document.createElement('p');
-    let phone = document.createElement('p');
-    let url = document.createElement('a');
-
-    name.textContent = company.name;
-    address.textContent = `${company.address}`;
-    phone.textContent = `${company.phone}`;
-
-    url.textContent = `${company.name} site`;
-    url.href = company.url
+fetch("https://raw.githubusercontent.com/omarlaneor/wwd230/main/lesson04/chamber/data/data.json")
+  .then(response => response.json())
+  .then(data => {
     
-    logo.src = company.img;
-    logo.alt = `${company.name} logo`
-    logo.loading = 'lazy'
-
-
-    card.appendChild(name);
-    card.appendChild(logo);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(url);
-
-    companies.appendChild(card);
-}
-
-function capitalize(word) {
-    const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
-    return capitalized;
-}
-
-function capitalizeStr(string) {
-    let capitalized;
-    if (string.includes("-")) {
-        let split = string.split("-");
-        split = split.map((word) => capitalize(word));
-        capitalized = split.join("-");
+    for (const company of data.companies) {
+      const div = document.createElement("div");
+      div.className = "card";
+      const img = document.createElement("img");
+      img.src = company.img;
+      img.alt = company.name;
+      const name = document.createElement("h4");
+      name.textContent = company.name;
+      const address = document.createElement("p");
+      address.textContent = company.address;
+      const phone = document.createElement("p");
+      phone.textContent = company.phone;
+      const url = document.createElement("a");
+      url.href = company.url;
+      url.textContent = company.url;
+      div.append(img, name, address, phone, url);
+      cards.appendChild(div);
     }
-    else {
-        capitalized = capitalize(string);
-    }
-    return capitalized;
-}
+  })
+  .catch(error => console.error(error));
+
+
+gridBtn.addEventListener("click", () => {
+  cards.classList.remove("list");
+  cards.querySelectorAll(".card").forEach(card => {
+    card.classList.remove("list");
+  });
+});
+
+listBtn.addEventListener("click", () => {
+  cards.classList.add("list");
+  cards.querySelectorAll(".card").forEach(card => {
+    card.classList.add("list");
+  });
+});

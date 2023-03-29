@@ -216,41 +216,64 @@
         margin: 0 auto;
         grid-column: 1/2;
         grid-row: 2/3;
+        justify-content: center;
     }
-
-    .up-weather{
-		margin-bottom: 20px;
+    
+    .up-weather {
+        margin-bottom: 8px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    .up-weather img {
+        width: 80px;
+    }
+
+    
     .weather-title {
-        margin-top: 6%;
+        margin-top: 4%;
         text-align: center;
+        font-size: 30px;
     }
-
+    
     .weather-text {
         font-family: Roboto, Sans-serif;
         font-size: 20px;
         text-align: center;
-		align-items: center;
-		align-content: space-between;
+        align-items: center;
+        align-content: space-between;
         margin-bottom: 0;
     }
-
+    
     #weather-temp {
         font-family: Roboto, sans-serif;
         text-shadow: 0 0 0.2em #69b6a9, 0 0 0.2em #69b6a9;
         font-size: 40px;
-        margin-left: 32%;
+        margin-left: 10px;
     }
-
+    
     #weather-desc {
         color: #FFFFFF;
         font-family: Roboto, sans-serif;
         text-shadow: 0 0 0.2em #69b6a9, 0 0 0.2em #69b6a9;
         font-size: 24px;
-        margin-left: 27%;
+        margin-left: 34%;
     }
+    
+    
+    
+    .weather-text span {
+        font-weight: bold;
+    }
+    
+    hr {
+        border-top: 1px solid #ffffff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
 
     .join {
         background-color: #7cd5f8;

@@ -143,19 +143,18 @@
     .weather {
         display: block;
         width: 100%;
-        height: 270px;
+        height: 350px;
         margin: 0 auto;
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
     #weather-temp {
+        color: #FFFFFF;
             font-family: Roboto, sans-serif;
             text-shadow: 0 0 0.2em #69b6a9, 0 0 0.2em #69b6a9;
-            font-size: 30px;
+            font-size: 40px;
             text-align: center;
-            align-items: stretch;
-            justify-content: center;
     }
 
     .up-weather{
@@ -166,6 +165,18 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+
+    .up-weather img {
+        width: 80px;
+        display: flex;
+    }
+
+    #weather-desc {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+        text-shadow: 0 0 0.2em #69b6a9, 0 0 0.2em #69b6a9;
+        font-size: 20px;
     }
 
     hr {
@@ -186,6 +197,11 @@
         align-items: center;
         align-content: space-between;
         margin: -0.1em;
+    }
+
+    .weather p {
+        color: #FFFFFF;
+        font-size: 20px;
     }
 
     .news {

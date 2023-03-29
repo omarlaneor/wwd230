@@ -745,6 +745,39 @@
         align-items: center;
     }
 
+    /* Contact Page */
+
+    .main-contact {
+        font-family: Roboto, sans-serif;
+        display: flex;
+        height: fit-content;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .formcontainer {
+        padding: 1em;
+    }
+
+    .formcontainer input, textarea {
+        width: 100%;
+        padding: 1em;
+        border: 3px solid #4d6451;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        margin-top: 0.375rem;
+        margin-bottom: 1rem;
+        resize: vertical;
+    }
+    
+    .button-contact{
+        display: flex;
+        padding: 1em;
+        border-radius: 0.625rem;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
 
 }
 

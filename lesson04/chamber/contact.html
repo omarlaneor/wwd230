@@ -44,70 +44,24 @@
     <div class="date">
         <span class="paragraph-text" id="get_date"></span>
     </div>
-    <main class="home">
-        <h1>Armenia's Chamber of Commerce</h1>
-        <div class="hero">
-            <picture class="myHero">
-                <source media="(min-width:200px)" srcset="/wwd230/lesson04/chamber/images/panoramica_600.png">
-                <source media="(min-width:600px)" srcset="/wwd230/lesson04/chamber/images/panoramica_600.png">
-                <source media="(min-width:1200px)" srcset="/wwd230/lesson04/chamber/images/panoramica_1200.png">
-                <img class="heroImage" src="/wwd230/lesson04/chamber/images/panoramica.png" alt="Armenia's View">
-            </picture>
+    
+    <main class="main-contact">
+        <div class="formcontainer">
+            <form method="get" action="thankyou.html">
+                <h2>Contact Us</h2>
+                <label class="top">Full Name*<input type="text" name="fname" placeholder="Your name here" required
+                        pattern="[A-Za-z].{5,}"></label>
+                <label class="top">Email*<input type="email" name="email" required
+                        placeholder="JohnDoe@example.com"></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="5551231234"></label>
+                <label for="comment" class="top">Comments<textarea placeholder="Write your comments!" name="comment" id="comment" cols="50"
+                        rows="10"></textarea></label>
+                <button class="button-contact">Submit</button>
+            </form>
         </div>
+</main>
+    
 
-        <section class="event">
-            <h2>Events</h2>
-            <p class="event-text">February 27, 2023 - 8:30 am
-                Workshop: Study of the Future in Agroindustrial Chains</p><br>
-            <p class="event-text">March 02, 2023 - 9:00 am 
-                Business Roundtable - Bakeries and Pastry Shops</p><br>
-            <p class="event-text">March 10, 2023 - 3:00 pm
-                Training in Water Quality Protocols and Training Plans for personnel.
-        </section>
-
-        <section class="weather">
-            <h2 class="weather-title">Weather</h2>
-            <div class="up-weather"><img src="" alt="Weather icon"><p><span id="weather-temp"></span> °C</p></div>
-            <div><span id="weather-desc"></span></div>
-            <hr>
-            <p class="weather-text">Wind Speed: <span id="wind-speed"></span> km/h</p>
-            <p class="weather-text">Wind Chill: <span id="wind-chill"></span></p>
-        </section>
-        
-
-        <section class="news">
-            <div class="new-text"><h2 class="news-title">News</h2>
-                <hr>
-                <h4>Sales on digital platforms</h4>
-                <p>February 7, 2023: In the recent sales report for the 2022-2023 season, made by the Studies and...     <a href="https://camaraarmenia.org.co/noticias-empresarial/ventas-en-plataformas-digitales/">View More...</a></p>
-                <hr>
-                <h4>Quindío, the destination chosen for the end of the year season</h4>
-                <p>January 17, 2023: 99.8% of tourists would visit Quindío again and recommend it as a vacation destination...      <a href="https://camaraarmenia.org.co/noticias-empresarial/quindio-el-destino-elegido-en-la-temporada-de-fin-de-ano-segun-el-observatorio-de-turismo-de-la-camara-de-comercio-el-998-de-los-turistas-volverian-a-visitar-el-quindio-y-recomendarian-el-destino-c/">View More...</a></p>
-            </div>
-        </section>
-
-        <section class="join">
-            <h2 class="join-title">Join Us</h2>
-            <p class="join-text">To be part of the Circle of Affiliates of the Armenian Chamber of Commerce is to belong to the select group of preferential clients. Where you can access and enjoy exclusive services and benefits; reaching new business opportunities and solid business strengthening.</p>
-            <a href="/wwd230/lesson04/chamber/join.html"><button class="join-button">Join</button></a>
-
-        </section>
-
-        <section class="spots">
-            <div id="educational">
-                <a href="#"><h2>Educational Training</h2></a>
-                <img class="tran-icon" src="/wwd230/lesson06/images/Study_chamber.jpg" alt="Study Image">
-            </div>
-            <div id="virtual">
-                <a href="#"><h2>Virtual Services</h2></a>
-                <img src="/wwd230/lesson06/images/Virtual.jpg" alt="Virtual Services Image">
-            </div>
-            <div id="business">
-                <a href="#"><h2>Business Services</h2></a>
-                <img src="/wwd230/lesson06/images/Business.jpg" alt="Business Center Img">
-            </div>
-        </section>
-    </main>
     <footer class="footerBox">
         <div id="footInfo1">
             <div id="locationInfo">

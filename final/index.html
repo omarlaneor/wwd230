@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Bountiful Foods Page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/bountiful_logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-wrap">
+            <div class="wrap-logo-header">
+                <a class="logo-header" href="/">BountifulFoods</a>
+            </div>
+       
+            <div class="wrap-nav-header">
+                <nav class="nav-header">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="hamb-menu"><img src="/wwd230/final/images/hamb.svg" alt="Hamburger Img"></i>
+                    </label>
+
+                    <ul class="main-menu">
+                        <li class="menu-item"><a href="/wwd230/final/index.html">Home</a></li>
+                        <li class="menu-item"><a href="/wwd230/final/fresh.html">Fresh</a></li>
+                        <li class="menu-item"><a href="/wwd230/final/aboutus.html">About Us</a></li>
+                        <li class="menu-item"><a id="nav-main-contact" href="/wwd230/final/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section-->
+    <div class="hero">
+        <section class="hero-home-page">
+            <div class="wrap-hero-home-page">
+            <h1>Bountiful Foods</h1>
+            <p>At Bountiful Foods, we support healthy eating, organic bounty and convenience, and are committed to providing the best quality food for you and your family. Thank you for choosing Bountiful Foods!</p>
+            <a href="/wwd230/final/fresh.html" class="cta-main">Make an Order</a>
+            </div>
+        </section>
+    </div>
+
+    <!--Juice Cards-->
+        <section class="wrap section">
+            <div class="wrap-title-section">
+                <h2>Juice Cards</h2>
+            </div>
+            <div class="column-4 columns">
+                <div style="background:url(images/mango.jpg)center; background-size: cover;" class="card-juice">
+                    <div class="wrap-text_card-juice">
+                        <h3>Yogurt and Mango Lassi</h3>
+                        <p>To enhance that exotic side of the fruit, we can prepare an Indian-style smoothie, the yogurt and mango lassi that is also flavored with saffron and cardamom.</p>
+                        <div class="cta-wrap_card-juice">
+                            <div class="price_card-juice">
+                                <span>$8.00</span>
+                            </div>
+                            <div class="cta_card-juice">
+                                <a href="">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background:url(images/strawberry.jpeg)center; background-size: cover;" class="card-juice">
+                    <div class="wrap-text_card-juice">
+                        <h3>Strawberry Smoothie</h3>
+                        <p>Resisting a good smoothie is not easy, especially when we can solve it at home in a matter of minutes using the seasonal fruit that we have closest at hand, as is the case with this strawberry smoothie.</p>
+                        <div class="cta-wrap_card-juice">
+                            <div class="price_card-juice">
+                                <span>$7.30</span>
+                            </div>
+                            <div class="cta_card-juice">
+                                <a href="">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background:url(images/apple.jpg)center; background-size: cover;" class="card-juice">
+                    <div class="wrap-text_card-juice">
+                        <h3>Granny Smith Apple Smoothie</h3>
+                        <p>The apple smoothie with kiwi and orange juice is sweeter, but we can also return to fresh tropical flavors with the Granny Smith apple smoothie with pineapple and mint.</p>
+                        <div class="cta-wrap_card-juice">
+                            <div class="price_card-juice">
+                                <span>$7.00</span>
+                            </div>
+                            <div class="cta_card-juice">
+                                <a href="">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background:url(images/pineapple.jpg)center; background-size: cover;" class="card-juice">
+                    <div class="wrap-text_card-juice">
+                        <h3>Pineapple Smoothie</h3>
+                        <p>Try it in a flavorful smoothie recipe like this one with pineapple, tangerine and ginger, or in the more tropical smoothie with pineapple, mango and coconut water. Both recipes lend themselves to adjustments to taste, with more ginger if you like the distinctive flavor of this root, or using fresh mint leaves to serve.</p>
+                        <div class="cta-wrap_card-juice">
+                            <div class="price_card-juice">
+                                <span>$9.50</span>
+                            </div>
+                            <div class="cta_card-juice">
+                                <a href="">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="wrap section-weather">
+            <div class="weather-card">
+                <div class="weather-card-header">
+                  <h2>Current weather conditions in Carlsbad</h2>
+                </div>
+                <div class="weather-card-body">
+                  <div class="current-weather">
+                    <h3>Actual Temp:</h3>
+                    <p class="temperature"></p>
+                    <h3>Condition Description:</h3>
+                    <p class="condition"></p>
+                    <h3>Humity:</h3>
+                    <p class="humidity"></p>
+                  </div>
+                  <div class="weather-forecast">
+                    <h3>Temperature forecast for the next 3 days:</h3>
+                    <div class="forecast"></div>
+                  </div>
+                </div>
+              </div>
+        
+        </section>
+
+    <main class="main-section">
+        <div class="social">
+            <ul>
+            <li><a href="http://www.facebook.com/" target="_blank" class="icon-facebook"></a></li>
+			<li><a href="http://www.twitter.com/" target="_blank" class="icon-twitter"></a></li>
+            <li><a href="http://www.instagram.com/" target="_blank" class="icon-instagram"></a></li>
+		    </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap-footer">
+            <div class="text-element-footer element-footer">
+                <h5>Bountiful Foods</h5>
+                <p>Come back to Bountiful Foods soon! Thank you for supporting healthy eating and organic bounty.</p>
+            </div>
+            <div class="text-element-footer element-footer">
+                <h5>Address</h5>
+                <ul>
+                    <li>Street Barcelona</li>
+                    <li>Carlsbad, CA</li>
+                    <li>92009, Unites States</li>
+                    <li>Phone: (+1) 760-334-7755</li>
+                    <li>Checkout: bountifulfoods.com</li>
+                </ul>
+            </div>
+            <div class="text-element-footer element-footer">
+                <h5>More info</h5>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/wwd230/final/fresh.html">Fresh</a></li>
+                    <li><a href="/wwd230/final/aboutus.html">About Us</a></li>
+                    <li><a href="/wwd230/final/contact.html">Contact</a></li>
+                    <li><a href="/wwd230/final/attributions.html">Attribution Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer-creds">
+            <p>&copy;<span id="year"></span> BountifulFoods | Omar Junior Osorio | WDD 230 Project | Last Modification: <span id="date2"></span>
+        </div>
+
+    </footer>
+    <script src="scripts/scripts.js" async defer></script>
+    <script src="scripts/dates.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+:root {
+    --main-c:#FFC300;
+    --black-c:#240808;
+    --third-c: #ae14dd;
+}
+
+/* General Styles */
+
+html {
+    font-family: "Josefin Sans", "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+/* Button Styles */
+
+.cta-main {
+    background-color: var(--main-c);
+    padding: 1rem 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+/* Hero Section HomePage */
+.hero{
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .25)), url(/wwd230/final/images/batidos-frutas.webp) center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-home-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-hero-home-page {
+    color: #FFFFFF;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}
+
+.wrap-hero-home-page p{
+    font-size: 26px;
+}
+
+/* Menu header */
+
+.wrap-social-menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    z-index: 999;
+}
+
+.wrap-logo-header {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    color: #FFFFFF;
+}
+
+.logo-header {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em rgb(14, 7, 119),
+		0 0 0.2em rgb(14, 7, 119);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-wrap-header {
+    display: flex;
+    flex-basis: 50%;
+}
+
+ul.main-menu {
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+ul.main-menu #nav-main-contact{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--main-c);
+    color: #FFFFFF;
+}
+
+li.menu-item{
+    margin: .75rem;
+    display: flex;
+}
+
+li.menu-item a{
+    display: flex;
+    padding: 1.5rem 1rem;
+    color: #240808;
+    align-content: space-between;
+}
+
+li.menu-item a:hover{
+    color: var(--third-c);
+}
+
+i.hamb-menu{
+    display: none;
+    background-color: #FFFFFF;
+    border: none;
+    z-index: 9999;
+}
+
+i.hamb-menu img{
+    width: 30px;
+    z-index: 99;
+}
+
+input#check{
+    display: none;
+}
+
+
+/* Juice Cards */
+
+.section {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 1rem;
+}
+
+.column-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 1rem;
+}
+
+.card-juice {
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.wrap-text_card-juice {
+    color: #FFFFFF;
+    padding: .5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+
+.wrap-text_card-juice p{
+    color: #f5f5f5;
+    font-size: 22px;
+}
+
+.cta-wrap_card-juice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_card-juice span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta_card-juice{
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: 4px;
+}
+
+.cta_card-juice a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social {
+	position: fixed;
+	left: 0;
+	top: 600px;
+	z-index: 9999;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color:#FFFFFF;
+    background: #000;
+    padding: 20px 30px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+
+.social ul li .icon-facebook {
+    background:#3b5998;
+}
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+.social ul li .icon-instagram {
+    background: #a12d67;
+}
+
+.social ul li a:hover {
+    background: #000;
+    padding: 22px 40px;
+}
+
+
+/* Weather */
+
+.weather-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.weather-card-header {
+    text-align: center;
+}
+
+.weather-card-header h2 {
+    font-size: 24px;
+}
+
+.weather-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.current-weather, .weather-forecast {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.current-weather h3, .weather-forecast h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.current-weather p, .weather-forecast p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-item {
+    flex-basis: 30%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.forecast-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.forecast-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer */
+
+/* Columns */
+.wrap-footer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1600px;
+}
+
+.element-footer {
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 100%;
+    font-size: 20px;
+    flex-basis: 30%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    color: #222;
+    max-width: 1200px;
+}
+
+.text-element-footer h3, .text-element-footer h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-element-footer ul li a {
+    color: #222;
+    text-decoration: none;
+}
+
+.text-element-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-creds {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    color: #585555;
+    font-size: .9rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* Here starts the code for Fresh Page: */
+
+.order-form {
+    margin: 10rem auto;
+}
+
+#form {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#form label {
+	width: 100%;
+	margin-top: 30px;
+}
+
+input, select, textarea {
+    background-color: #f5f5f5;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 5px;
+}
+
+button {
+	margin: 30px auto;
+	padding: 10px 20px;
+	background-color: #FFC300;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ae14dd;
+}
+
+#output {
+	margin: 20px auto;
+	width: 50%;
+}
+
+/* About Us */
+
+.container {
+    max-width: 1600px;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    width: 100%;
+    padding: 40px;
+}
+
+.text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.images {
+    margin: 8rem auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.map {
+    width: 100%;
+}
+
+
+/* Attributions */
+
+.attributions {
+    margin: 10rem auto;
+    font-size: 20px;
+    max-width: 1600px;
+}
+
+
+/* Contact */
+
+.contact-form {
+    margin: 10rem auto;
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 22px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, textarea {
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ae14dd;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    margin: 20px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC300;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ae14dd;
+}
+
+/* Thank you Page */
+
+.text-center {
+    margin: 10rem auto;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.text-center p {
+    font-size: 22px;
+}
+
+.text-center a {
+    text-decoration: underline;
+}

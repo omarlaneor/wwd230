@@ -1,0 +1,53 @@
+@media (max-width:1000px){
+
+    .header-wrap{
+        display: flex;
+        padding: .2rem 2rem;
+    }
+
+    .wrap-logo-header {
+        display: flex;
+        align-items: center;
+        flex-basis: 15%;
+    }
+
+    i.hamb-menu{
+        display: flex;
+    }
+
+    ul.main-menu, #nav-main-contact{
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.main-menu{
+        position: fixed;
+        background-color: #FFFFFF;
+    }
+
+    label.checkbtn{
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    #check:checked ~ ul{
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 4rem;
+        background-color: rgb(227, 240, 232);
+    }
+
+    .column-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
